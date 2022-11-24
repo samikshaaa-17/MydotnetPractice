@@ -1,0 +1,20 @@
+﻿body {
+   /* background-color:aliceblue;*/
+   align-content:center;
+}
+
+.textb {
+    height:50px;
+    width:250px;
+    border-color:#66b3ff;
+    border-radius:20px;
+    font-size:20px;
+}
+
+.texta {
+    height:100px;
+    width: 450px;
+    border-color: #66b3ff;
+    border-radius: 20px;
+    font-size: 20px;
+}

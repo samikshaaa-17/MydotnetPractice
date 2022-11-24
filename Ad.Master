@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ad.master.cs" Inherits="WebApplication2.Ad" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- j-query link  -->  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title></title>
+     <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <style>
+       nav ul {
+              margin:0;
+              padding:0;
+          }
+       nav li{
+         float:left;
+         display:inline;
+       }
+       nav a{
+        display:inline-block;
+        padding:10px;
+        text-decoration:none;
+         color:black;
+        font-weight:bold;
+       }
+         nav a:hover {
+         color:black;  
+         background-color:#e6f2ff;
+       }
+         nav a:active {
+         color:black;     
+       }
+          asp TextBox{
+    border-radius:10px;
+}
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="container">
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#66b3ff;">
+        
+            <ul>
+                
+                <li><a href="ad_stu.aspx">DETAIL</a></li>
+                <li><a href="ad_que.aspx">UPLOAD QUESTIONS</a></li>
+                <li>
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LOGOUT</asp:LinkButton></li>
+                <li style="font-style:italic;font-family:cursive;float:left;align-self:center;color:white;display:inline;margin-left:800px;font-weight:bolder;margin-top:6px;font-size:25px">QUIZ</li>
+            </ul>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
